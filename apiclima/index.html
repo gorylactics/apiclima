@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>El clima</title>
+
+</head>
+<body>
+
+<div class="container__fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="titulo">Pronostico del clima</h1>
+            <div class="form-group">
+                    <select class="form-control" id="select">
+                        <option value="">Seleccione una ubicación</option>
+                        <option value="scl">Santiago, Region Metropolitana</option>
+                        <option value="ccp">Concepción, Región del BíoBio</option>
+                    </select> 
+                </div>
+            </div>   
+     <div class="col-lg-12">
+            <h2 id="resumen"></h2>
+                <table class="table table-striped">
+                    <tr>
+                        <td>Sensación Térmica en el ambiente</td>
+                        <td id="sensacion"></td>
+                    </tr>
+                    <tr>
+                        <td>Probabilidad actual de lluvia</td>
+                        <td id="probabilidad"></td>
+                    </tr>
+                    <tr>
+                        <td>Humedad relativa del aire</td>
+                        <td id="humedad"></td>
+                    </tr>                            
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb5YMQVD-OlKPsyJ7focr6kK18orhHvNk&q=initMap"async defer></script>
+<script src="clima.js"></script>
+</body>
+</html>
